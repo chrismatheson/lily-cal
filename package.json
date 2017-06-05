@@ -6,12 +6,8 @@
   "dependencies": {
     "express": "^4.15.3",
     "ical-toolkit": "^1.0.9",
-    "ics": "^1.5.0",
-    "ics-js": "^0.10.2",
     "moment": "^2.18.1",
-    "moment-recur": "^1.0.5",
-    "ts-node": "^3.0.4",
-    "typescript": "^2.3.3"
+    "moment-recur": "^1.0.5"
   },
   "devDependencies": {
     "now": "^6.3.1"
