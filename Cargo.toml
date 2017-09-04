@@ -1,0 +1,10 @@
+[package]
+name = "hello_world"
+version = "0.1.0"
+authors = ["Chris Matheson "]
+[dependencies]
+rocket = "*"
+rocket_codegen = "*"
+icalendar = "*"
+time = "*"
+chrono = "*"
