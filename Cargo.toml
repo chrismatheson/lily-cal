@@ -1,5 +1,5 @@
 [package]
-name = "hello_world"
+name = "lily-cal"
 version = "0.1.0"
 authors = ["Chris Matheson "]
 [dependencies]
@@ -8,3 +8,4 @@ rocket_codegen = "*"
 icalendar = "*"
 time = "*"
 chrono = "*"
+domafic = "*"
