@@ -5,23 +5,25 @@ extern crate rocket;
 extern crate icalendar;
 extern crate chrono;
 extern crate domafic;
-use domafic::tags::{div, h1, p};
+
 use std::marker::PhantomData;
+use std::ops::Add;
+
+use domafic::tags::{div, h1, p};
 use chrono::prelude::*;
 use icalendar::{Component, Calendar, Event, Property};
-use rocket::response::{Failure};
+use rocket::response::{Failure, content};
 use rocket::http::Status;
-use std::ops::Add;
 
 type Msg = ();
 
 #[get("/")]
-fn index() -> String {
-    return div((
+fn index() -> content::Html<String> {
+    return content::Html(div((
         h1("Welcome to Baby-Cal"),
         p("This page will create you a calendar with usefull at-a-glance info about your babies age."),
         PhantomData::<Msg>
-    )).to_string();
+    )).to_string());
 }
 
 
